@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/*.jar app.jar
 
 # Expose the port your app runs on
-EXPOSE 5000
+EXPOSE 8082
 
 # Run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]

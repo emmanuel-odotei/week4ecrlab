@@ -12,6 +12,8 @@ public class GreetingService {
     
     public String greeting(String user) {
         String emoji = EMOJIS.get(random.nextInt(EMOJIS.size()));
-        return emoji + " Hello " + user + "! Welcome to your Spring Boot App on AWS Elastic Beanstalk " + emoji;
+        return emoji + " Hello " + user + "! Welcome to my containerized Spring Boot App on AWS Elastic Container " +
+                "Registry" +
+                " " + emoji;
     }
 }
