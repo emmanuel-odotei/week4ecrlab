@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.myapp</groupId>
-	<artifactId>elblab</artifactId>
+	<artifactId>ecrlab</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ecr-lab</name>
 	<description>Demo Spring Boot project for AWS ECR lab</description>
