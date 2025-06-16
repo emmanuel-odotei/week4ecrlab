@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeting App</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #9face6);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #2d3436;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0984e3;
+            font-size: 1rem;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1 th:text="${message}">Welcome Message</h1>
+    <p>This is a modern Spring Boot application deployed on AWS Elastic Beanstalk.</p>
+    <a th:href="@{/}">👈 Back</a>
+</div>
+</body>
+</html>

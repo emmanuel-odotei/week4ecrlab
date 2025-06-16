@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeting App</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            transition: background 0.5s ease;
+        }
+
+        body:has(.form-card:hover) {
+            background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* a cool blue gradient */
+            transition: background 0.5s ease;
+        }
+
+        .form-card {
+            background: white;
+            padding: 2rem 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        input[type="text"] {
+            padding: 0.5rem;
+            width: 90%;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 0.5rem 1.2rem;
+            background-color: #ff7675;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d63031;
+        }
+    </style>
+</head>
+<body>
+<div class="form-card">
+    <h2>Enter Your Name</h2>
+    <form th:action="@{/greet}" method="post">
+        <label>
+            <input type="text" name="name" placeholder="Enter Your name here 😎" required>
+        </label>
+        <br>
+        <button type="submit">Greet Me</button>
+    </form>
+</div>
+</body>
+</html>
