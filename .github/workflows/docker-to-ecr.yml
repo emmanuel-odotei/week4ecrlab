@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      IMAGE_TAG: ${{ secrets.IMAGE_TAG }}
-      ECR_URI: ${{ secrets.ECR_URI }}
+      IMAGE_TAG: emmanuel-odotei-greeting-app
+      ECR_URI: public.ecr.aws/t7e1h5o1/week4lab1ecr_greetingapp
 
     steps:
       - name: Checkout code
