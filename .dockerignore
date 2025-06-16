@@ -4,3 +4,6 @@ target/
 .github
 *.zip
 *.log
+.gitignore
+Dockerfile
+README.md
